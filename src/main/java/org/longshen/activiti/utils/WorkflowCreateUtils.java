@@ -6,7 +6,15 @@ import org.activiti.bpmn.model.Process;
 import org.activiti.engine.repository.Deployment;
 import org.longshen.activiti.vo.ProcessFlow;
 
+/**
+ * 流程创建
+ */
 public class WorkflowCreateUtils {
+    /**
+     * 创建新流程
+     * @param processFlow
+     * @return
+     */
     public static boolean addActivitiProcessFlow(ProcessFlow processFlow){
         BpmnModel model = new BpmnModel();
         Process process = new Process();

@@ -4,6 +4,9 @@ import org.activiti.bpmn.model.*;
 
 import java.util.List;
 
+/**
+ * 节点创建
+ */
 public class ActivitiCreateUtils {
     /**
      * 创建task节点
