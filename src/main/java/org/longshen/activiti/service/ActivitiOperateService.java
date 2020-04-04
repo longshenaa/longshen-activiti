@@ -13,5 +13,5 @@ public interface ActivitiOperateService {
     /**
      * 完成任务
      */
-    void completeTask();
+    void completeTask(String processId);
 }
