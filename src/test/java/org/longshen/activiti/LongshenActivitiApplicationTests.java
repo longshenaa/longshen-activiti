@@ -1,10 +1,9 @@
 package org.longshen.activiti;
 
 import org.activiti.engine.RepositoryService;
-import org.activiti.engine.repository.ProcessDefinition;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
-import org.longshen.activiti.service.ActivitiService;
+import org.longshen.activiti.service.ActivitiOperateService;
 import org.longshen.activiti.utils.ActivitiServiceUtils;
 import org.longshen.activiti.utils.CommonUtils;
 import org.longshen.activiti.utils.WorkflowCreateUtils;
@@ -13,8 +12,6 @@ import org.longshen.activiti.vo.ProcessFlow;
 import org.longshen.activiti.vo.TaskEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.FileCopyUtils;
-import org.springframework.util.FileSystemUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +22,7 @@ import java.util.List;
 @SpringBootTest
 class LongshenActivitiApplicationTests {
     @Autowired
-    private ActivitiService activitiService;
+    private ActivitiOperateService activitiService;
 
     @Test
     void contextLoads() {
