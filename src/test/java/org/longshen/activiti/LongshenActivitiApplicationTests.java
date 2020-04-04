@@ -96,4 +96,8 @@ class LongshenActivitiApplicationTests {
             FileUtils.copyInputStreamToFile(in, f);
         }
     }
+    @Test
+    public void completeTask() throws IOException {
+        activitiService.completeTask("25001");
+    }
 }
